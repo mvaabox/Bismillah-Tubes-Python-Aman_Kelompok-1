@@ -76,3 +76,14 @@ while True: # Untuk melakukan perulangan
             else:
                 median = listBaru[len(listBaru) // 2]
             return median
+        
+masukan = input("\n\n Masukan nama file atau directory: ")
+testData = changeType(masukan)
+testData = rata(testData)
+testData = median(testData)
+
+print("\t=========HASIL PERHITUNGAN=========\n")
+header = ['NIM','TUGAS1','TUGAS2','QUIZ1','QUIZ2','UTS','UAS']
+data.insert(0,header)
+for i,b in enumerate(data):
+    print(f'{i}\t{b}')
